@@ -1,16 +1,16 @@
-# aspnet-coreclr-mvc
-Docker base image which includes a bunch of asp.net core mvc packages already installed.
+# aspnet-dnx451-mvc
+Docker base image which includes a bunch of asp.net dnx451 mvc packages already installed.
 
-Docker hub: https://hub.docker.com/r/cl0sey/aspnet-coreclr-mvc/
+Docker hub: https://hub.docker.com/r/cl0sey/aspnet-dnx451-mvc/
 
 To use:
 ```
-docker pull cl0sey/aspnet-coreclr-mvc
+docker pull cl0sey/aspnet-dnx451-mvc
 ```
 
 In your Dockerfile:
 ```dockerfile
-FROM aspnet-coreclr-mvc:latest
+FROM aspnet-dnx451-mvc:latest
 ADD . app/
 WORKDIR app
 RUN "dnu" "restore"
